@@ -32,4 +32,8 @@ app.use("/api/v1/role", roleRouter);
 import memberRouter from "./routes/member.routes.js";
 app.use("/api/v1/member", memberRouter);
 
+app.get("/", (req, res) => {
+    res.send("⚙️ ⚙️ ⚙️ Every thing is working fine  ⚙️ ⚙️ ⚙️");
+});
+
 export { app };
